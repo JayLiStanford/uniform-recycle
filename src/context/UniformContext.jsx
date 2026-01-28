@@ -35,18 +35,19 @@ export function UniformProvider({ children }) {
 
   /**
    * Get default sample items for demonstration
+   * Includes placeholder images using placeholder.com service
    * @returns {Array} Array of default uniform items
    */
   const getDefaultItems = () => {
     return [
       {
         id: 1,
-        name: 'School Jacket - Size 12',
-        category: 'Jackets',
+        name: 'School Blazer - Size 12',
+        category: 'Blazers',
         size: '12',
-        condition: 'Good',
-        description: 'Navy blue school jacket in excellent condition, perfect for cooler weather',
-        image: 'https://via.placeholder.com/300x400?text=Jacket+Size+12',
+        condition: 'Excellent',
+        description: 'Navy blue school blazer in excellent condition, perfect for formal occasions',
+        image: 'https://placehold.co/400x500/1e3a8a/ffffff?text=Blazer+Size+12',
         available: true
       },
       {
@@ -56,47 +57,67 @@ export function UniformProvider({ children }) {
         size: '10',
         condition: 'Excellent',
         description: 'White school shirt, barely worn, crisp and clean',
-        image: 'https://via.placeholder.com/300x400?text=Shirt+Size+10',
+        image: 'https://placehold.co/400x500/f3f4f6/1f2937?text=Shirt+Size+10',
         available: true
       },
       {
         id: 3,
-        name: 'School Pants - Size 14',
-        category: 'Pants',
+        name: 'School Trousers - Size 14',
+        category: 'Trousers',
         size: '14',
         condition: 'Good',
-        description: 'Grey school pants, good condition with minimal wear',
-        image: 'https://via.placeholder.com/300x400?text=Pants+Size+14',
+        description: 'Grey school trousers, good condition with minimal wear',
+        image: 'https://placehold.co/400x500/6b7280/ffffff?text=Trousers+Size+14',
         available: true
       },
       {
         id: 4,
+        name: 'School Skirt - Size 12',
+        category: 'Skirts',
+        size: '12',
+        condition: 'Excellent',
+        description: 'Pleated school skirt in perfect condition, like new',
+        image: 'https://placehold.co/400x500/7c3aed/ffffff?text=Skirt+Size+12',
+        available: true
+      },
+      {
+        id: 5,
         name: 'School Tie',
         category: 'Accessories',
         size: 'Standard',
         condition: 'Excellent',
         description: 'School tie in perfect condition, like new',
-        image: 'https://via.placeholder.com/300x400?text=Tie',
+        image: 'https://placehold.co/400x500/dc2626/ffffff?text=School+Tie',
         available: true
       },
       {
-        id: 5,
+        id: 6,
         name: 'School Shirt - Size 14',
         category: 'Shirts',
         size: '14',
         condition: 'Good',
         description: 'White school shirt, well-maintained and ready to wear',
-        image: 'https://via.placeholder.com/300x400?text=Shirt+Size+14',
+        image: 'https://placehold.co/400x500/f3f4f6/1f2937?text=Shirt+Size+14',
         available: true
       },
       {
-        id: 6,
+        id: 7,
         name: 'School Belt',
         category: 'Accessories',
         size: 'Medium',
         condition: 'Excellent',
         description: 'Leather school belt, adjustable and in great condition',
-        image: 'https://via.placeholder.com/300x400?text=Belt',
+        image: 'https://placehold.co/400x500/92400e/ffffff?text=School+Belt',
+        available: true
+      },
+      {
+        id: 8,
+        name: 'School Blazer - Size 14',
+        category: 'Blazers',
+        size: '14',
+        condition: 'Good',
+        description: 'Navy blue blazer, well-maintained with minor wear',
+        image: 'https://placehold.co/400x500/1e3a8a/ffffff?text=Blazer+Size+14',
         available: true
       }
     ]

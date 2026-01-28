@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { useUniforms } from '../context/UniformContext'
+import AdminPasswordProtection from '../components/AdminPasswordProtection'
 
 /**
  * Admin page component for managing uniform items
  * Allows uploading, editing, and deleting uniform items
  * Includes form validation and image preview
  * Mobile-responsive design with intuitive interface
+ * Protected by password authentication
  */
 function AdminPage() {
   const { items, addItem, updateItem, deleteItem, getCategories } = useUniforms()
@@ -125,8 +127,9 @@ function AdminPage() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">Admin Dashboard</h1>
+    <AdminPasswordProtection>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">Admin Dashboard</h1>
 
       {/* Add/Edit Form */}
       <div className="bg-white rounded-lg shadow-md p-6 mb-8">
@@ -455,7 +458,8 @@ function AdminPage() {
           </table>
         </div>
       </div>
-    </div>
+      </div>
+    </AdminPasswordProtection>
   )
 }
 
